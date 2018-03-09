@@ -1,12 +1,12 @@
 {
   "name": "travis-npm-sandbox",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "Sandbox to test NPM automate publishing via Travis",
   "main": "file1.js",
   "scripts": {
     "build": "node build.js",
     "preversion": "npm test",
-    "prepublishOnly": "npm run build",
+    "postversion": "npm run build && git add . && git commit -m \":package: Build\" && git push && git push --tags",
     "test": "echo \"Done!\" && exit 0"
   },
   "repository": {
