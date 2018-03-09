@@ -1,6 +1,6 @@
 {
   "name": "travis-npm-sandbox",
-  "version": "1.8.0",
+  "version": "1.9.0",
   "description": "Sandbox to test NPM automate publishing via Travis",
   "main": "file1.js",
   "scripts": {
