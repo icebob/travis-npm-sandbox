@@ -12,10 +12,11 @@ script:
 jobs:
   include:
     - stage: npm release
-      node_js: "7"
+      node_js: "8"
       script: echo "Deploying to npm ..."
       deploy:
         provider: npm
         email: $NPM_EMAIL
         api_key: $NPM_API_KEY
-        on: deploy-npm-release
+        on: 
+          tags: true          

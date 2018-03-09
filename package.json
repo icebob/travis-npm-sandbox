@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/icebob/travis-npm-sandbox/issues"
   },
-  "homepage": "https://github.com/icebob/travis-npm-sandbox#readme"
+  "homepage": "https://github.com/icebob/travis-npm-sandbox#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }
