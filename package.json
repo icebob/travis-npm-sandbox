@@ -1,0 +1,23 @@
+{
+  "name": "travis-npm-sandbox",
+  "version": "1.0.0",
+  "description": "Sandbox to test NPM automate publishing via Travis",
+  "main": "file1.js",
+  "scripts": {
+    "build": "node build.js",
+    "preversion": "npm test",
+    "postversion": "npm run build",
+    "test": "echo \"Done!\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icebob/travis-npm-sandbox.git"
+  },
+  "keywords": [],
+  "author": "Icebob",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/icebob/travis-npm-sandbox/issues"
+  },
+  "homepage": "https://github.com/icebob/travis-npm-sandbox#readme"
+}
