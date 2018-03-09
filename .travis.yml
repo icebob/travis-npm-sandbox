@@ -15,6 +15,7 @@ deploy:
   api_key: $NPM_API_KEY
   on: 
     tags: true          
+    node: "8"
 
 # jobs:
 #   include:
