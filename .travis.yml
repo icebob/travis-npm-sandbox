@@ -9,9 +9,6 @@ node_js:
 script:
   - npm test
 
-before_deploy:
-  - npm run build
-  
 deploy:
   provider: npm
   email: $NPM_EMAIL
