@@ -1,0 +1,19 @@
+files: [
+  'package.json'
+]
+
+plugins:
+
+  postrelease:
+
+    'Compiling browser version':
+      plugin: 'bumped-terminal'
+      command: 'npm run build'
+
+    'Commiting new version':
+      plugin: 'bumped-terminal'
+      command: 'git add CHANGELOG && git commit -m "$newVersion releases" && git push origin master'
+
+    'Publishing tag at GitHub':
+      plugin: 'bumped-terminal'
+      command: 'git tag $newVersion && git push origin $newVersion'
