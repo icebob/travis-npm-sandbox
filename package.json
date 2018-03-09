@@ -6,7 +6,6 @@
   "scripts": {
     "build": "node build.js",
     "preversion": "npm test",
-    "postversion": "npm run build",
     "test": "echo \"Done!\" && exit 0"
   },
   "repository": {

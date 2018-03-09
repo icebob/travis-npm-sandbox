@@ -9,3 +9,5 @@ content += `Version: ${pkg.version} - ${new Date().toISOString()}\n`;
 fs.writeFileSync(fName, content, "utf8");
 
 console.log("Done!");
+
+console.log(content, "\n");
